@@ -1,70 +1,22 @@
-# Getting Started with Create React App
+# sprite-planner
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project was made as an effort to practice my full stack skills jus tout of my coding bootcamp. Additonally I was seriously inspired by some UI deisgn in the Metal gear Solid video game series and I wanted to learn more about it and incoorporate it into a project.
 
-## Available Scripts
+## Check out the Project
 
-In the project directory, you can run:
+Check out the different aspects of the project below:
 
-### `npm start`
+- [Heroku Deployment]()
+- [Repository](https://github.com/johnathanmann/sprite-planner)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+![Screenshot of site]()
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Design Process
 
-### `npm test`
+The UI design and the little character (Otacon) on the project page were all designed in reference to Metal Gear Solid 2 and the photo viewer screens during the Tanker portion of the game. The whole metal gear series has a lot of UI design I love, especially Metal Gear Solid 3. I figured Otacon, a computer programer and engineer, could have used a site like this himself in his own programming endeavors. During some of the font searching I did for this prject I found this cool blog post about the intent of font in MGS check it out if [here](https://metalgearstuff.wordpress.com/2020/01/29/the-fonts-of-metal-gear-solid/) your interested!
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Summary
+This site allows you to login and signup for a project planning progream. Create projects and give them names and summerys. Delete projects as you finish them and update them along the way!
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
