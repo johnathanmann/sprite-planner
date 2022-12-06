@@ -30,6 +30,11 @@ async function getUserById(req, res) {
 
 async function createUser(req, res) {
   try {
+    // const userCheck = await User.find({ username: req.body.username })
+    // if (userCheck) {
+    //   res.status(403).json({ message: "Username already taken, please try again" });
+    //   return;
+    // }
     const user = await User.create(req.body);
     const token = signToken(user);
     res.json({ token, user });
