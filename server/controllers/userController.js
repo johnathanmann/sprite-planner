@@ -1,5 +1,5 @@
 const User = require("../models/User");
-const Post = require("../models/Post");
+// const Post = require("../models/Post");
 const { signToken } = require("../utils/auth");
 
 async function getAllUsers(req, res) {
@@ -20,7 +20,7 @@ async function getUserById(req, res) {
     const singleUser = await User.findById(req.params.userId)
       .select("-__v")
       .select("-password")
-      .populate("posts");
+      .populate("projects");
     res.status(200).json(singleUser);
   } catch (err) {
     console.error(err);
@@ -30,11 +30,6 @@ async function getUserById(req, res) {
 
 async function createUser(req, res) {
   try {
-    // const userCheck = await User.find({ username: req.body.username })
-    // if (userCheck) {
-    //   res.status(403).json({ message: "Username already taken, please try again" });
-    //   return;
-    // }
     const user = await User.create(req.body);
     const token = signToken(user);
     res.json({ token, user });
@@ -65,7 +60,7 @@ async function deleteUser(req, res) {
     const deletedUser = await User.findOneAndRemove({ _id: req.params.userId })
       .select("-__v")
       .select("-password");
-    await Post.deleteMany({ _id: { $in: deletedUser.posts } });
+    await Project.deleteMany({ _id: { $in: deletedUser.posts } });
     res.status(200).json(deletedUser);
   } catch (err) {
     console.error(err);
