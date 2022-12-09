@@ -36,6 +36,7 @@ export default function Sprite() {
 
   return (
     <div>
+      <NavTabs/>
       {renderPage()}
     </div>
   );

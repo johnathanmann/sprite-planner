@@ -1,5 +1,5 @@
 const User = require("../models/User");
-// const Post = require("../models/Post");
+const Project = require("../models/Project");
 const { signToken } = require("../utils/auth");
 
 async function getAllUsers(req, res) {
