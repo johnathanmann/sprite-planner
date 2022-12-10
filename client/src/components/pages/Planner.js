@@ -32,18 +32,18 @@ async function postForm() {
   export default function Planner() {
     return (
       <div className="container-fluid">
-        <h1>New Post</h1>
+        <h1>New Project</h1>
         <form>
           <div className="form-group">
             <h3>
-              <label htmlFor="code">Post Title:</label>
+              <label htmlFor="code">Project Title:</label>
             </h3>
             <br />
             <textarea className="form-control" id="projectTitle" rows="1"></textarea>
           </div>
           <div className="form-group">
             <h3>
-              <label htmlFor="code">Your Post:</label>
+              <label>Project Description:</label>
             </h3>
             <br />
             <textarea
@@ -54,7 +54,7 @@ async function postForm() {
           </div>
           <div className="form-group">
   
-            <button onClick={() =>postForm()} className="btn" type="submit">
+            <button onClick={() =>projectForm()} className="btn" type="submit">
   
               Submit
             </button>
