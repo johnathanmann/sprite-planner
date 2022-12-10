@@ -5,7 +5,7 @@ import Homepage from "./pages/Homepage";
 import Login from "./pages/Login";
 import Signup from "./pages/Signup";
 import Planner from "./pages/Planner";
-import Project from "./pages/Project";
+import Projects from "./pages/Projects";
 
 export default function Sprite() {
   const [currentPage, setCurrentPage] = useState("Homepage");
@@ -23,8 +23,8 @@ export default function Sprite() {
     if (currentPage === "Planner") {
       return <Planner />;
     }
-    if (currentPage === "Project") {
-      return <Project />;
+    if (currentPage === "Projects") {
+      return <Projects />;
     }
   };
 

@@ -20,6 +20,17 @@ async function getProjectById(req, res) {
   }
 }
 
+
+async function getProjectById(req, res) {
+  try {
+    const singleProject = await Project.findById(req.params.projectId).select("-__v");
+    res.status(200).json(singleProject);
+  } catch (err) {
+    console.error(err);
+    res.status(500).json(err);
+  }
+}
+
 async function createProject(req, res) {
   try {
     const newProject = await Project.create(req.body);

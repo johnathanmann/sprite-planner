@@ -7,7 +7,8 @@ export default function Homepage({handlePageChange }){
         <div>
         {Auth.loggedIn() ? (
         <>
-            <button onClick={() => handlePageChange("Planner")}>My Projects</button>
+            <button onClick={() => handlePageChange("Planner")}>Create Project</button>
+            <button onClick={() => handlePageChange("Projects")}>Projects</button>
         </>
           ) : (
           <>

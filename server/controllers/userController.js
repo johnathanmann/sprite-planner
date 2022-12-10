@@ -28,6 +28,17 @@ async function getUserById(req, res) {
   }
 }
 
+async function getUserProjects(req, res) {
+  try {
+    var allProjects = await User.findById(req.params.userId).populate("projects");
+    allProjects = allProjects.projects;
+    res.status(200).json({allProjects});
+  } catch (err) {
+    console.error(err);
+    res.status(500).json(err);
+  }
+}
+
 async function createUser(req, res) {
   try {
     const user = await User.create(req.body);
@@ -105,4 +116,5 @@ module.exports = {
   updateUser,
   deleteUser,
   loginUser,
+  getUserProjects
 };
