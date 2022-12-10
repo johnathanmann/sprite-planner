@@ -1,6 +1,6 @@
 import React from "react";
 
-async function postForm() {
+async function projectForm() {
 
   // Get post title
   const projectTitle = document.getElementById('projectTitle').value;
@@ -36,7 +36,7 @@ async function postForm() {
         <form>
           <div className="form-group">
             <h3>
-              <label htmlFor="code">Project Title:</label>
+              <label>Project Title:</label>
             </h3>
             <br />
             <textarea className="form-control" id="projectTitle" rows="1"></textarea>
