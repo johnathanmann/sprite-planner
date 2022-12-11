@@ -1,21 +1,23 @@
 import React from "react";
-
 import Auth from "../../utils/auth";
+import "../../styles/menus.css";
 
 export default function Homepage({handlePageChange }){
     return(
         <div>
         {Auth.loggedIn() ? (
-        <>
-            <button onClick={() => handlePageChange("Planner")}>Create Project</button>
-            <button onClick={() => handlePageChange("Projects")}>Projects</button>
-        </>
+          <div className="menu-container">
+          <div className="button">
+          <button onClick={() => handlePageChange("Planner")}>Create Project</button><br/>
+          <button onClick={() => handlePageChange("Projects")}>Projects</button>
+          </div>
+      </div>
           ) : (
-          <>
-            <h1>Homepage</h1>
-            <button onClick={() => handlePageChange("Login")}>Login</button>
-            <button onClick={() => handlePageChange("Signup")}>Sign Up</button>
-        </>
+          <div className="menu-container">
+            <div className="button">
+            <button onClick={() => handlePageChange("Login")}>Authentication</button>
+            </div>
+        </div>
           )}
         </div>
     )

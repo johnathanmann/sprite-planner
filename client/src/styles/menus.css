@@ -1,0 +1,24 @@
+.menu-container{
+    height: 100vh;
+    height:100vh;
+    background:black;
+    margin: 0;
+    display: flex;  
+    justify-content: center;  
+    align-items: center;  
+}
+
+.button{
+    justify-content: center;
+    text-align: center;
+    margin: 0 auto;
+}
+
+button{
+    all: unset;
+    color: var(--green);
+    font-family: metalgear;
+    padding: 10px;
+    border: 3px solid var(--green);
+    margin: 10px;
+}

@@ -1,9 +1,8 @@
 import React, { useState, useEffect } from "react";
-import NavTabs from "./NavTabs";
+import Header from "./Header";
 import Footer from "./Footer";
 import Homepage from "./pages/Homepage";
 import Login from "./pages/Login";
-import Signup from "./pages/Signup";
 import Planner from "./pages/Planner";
 import Projects from "./pages/Projects";
 
@@ -16,9 +15,6 @@ export default function Sprite() {
     }
     if (currentPage === "Login") {
       return <Login />;
-    }
-    if (currentPage === "Signup") {
-      return <Signup />;
     }
     if (currentPage === "Planner") {
       return <Planner />;
@@ -36,7 +32,7 @@ export default function Sprite() {
 
   return (
     <div>
-      <NavTabs/>
+      <Header/>
       {renderPage()}
     </div>
   );

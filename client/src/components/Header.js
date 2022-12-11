@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import Auth from "../utils/auth";
+import "../styles/styles.css"
 
 export default function User() {
   const [singleUser, setSingleUser] = useState([]);
@@ -12,15 +13,25 @@ export default function User() {
     const response = await fetch(`/api/users/${userID}`);
     const singleUser = await response.json();
 
-    setSingleUser(singleUser);
+    setSingleUser(singleUser)
   }
   useEffect(() => {
     getUser();
   });
 
   return (
-    <div className="container-fluid">
+    <div>
+    {Auth.loggedIn() ? (
+      <>
+      <div className="container">
       <h1>Logged in as user<span id="userId">{singleUser._id}</span></h1>
     </div>
+      </>
+        ) : (
+          <>
+          
+          </>
+        )}
+        </div>
   );
 }
