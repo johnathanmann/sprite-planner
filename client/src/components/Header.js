@@ -23,7 +23,7 @@ export default function User() {
     <div>
     {Auth.loggedIn() ? (
       <>
-      <div className="container">
+      <div className="hidden">
       <h1>Logged in as user<span id="userId">{singleUser._id}</span></h1>
     </div>
       </>

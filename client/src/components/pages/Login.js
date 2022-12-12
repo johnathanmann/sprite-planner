@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
-
 import auth from "../../utils/auth";
+import "../../styles/login.css"
 import { signupAction } from "../../utils/signup";
 import { loginAction } from "../../utils/login";
 
@@ -53,16 +53,15 @@ export default function Login() {
   };
 
   return (
-    <div className="row" id="login">
-      <div className="col-md-6 registration">
+    <div className="login-container" id="login">
+      <div className="border">
+      <div className="registration">
         <h2>Login</h2>
-
-        <form onSubmit={handleLogin} className="form login-form">
+        <form onSubmit={handleLogin}>
           <div className="form-group">
-            <label htmlFor="email-login">Email:</label>
+            <label>Email:</label>
             <br />
             <input
-              className="form-input"
               type="text"
               id="email-login"
               onChange={handleInputChangeLogin}
@@ -74,7 +73,6 @@ export default function Login() {
             <label htmlFor="password-login">Password:</label>
             <br />
             <input
-              className="form-input"
               type="password"
               id="password-login"
               onChange={handleInputChangeLogin}
@@ -82,14 +80,12 @@ export default function Login() {
               name="password"
             />
           </div>
-          <div className="form-group">
-            <button className="btn" type="submit">
+            <button type="submit">
               Login
             </button>
-          </div>
         </form>
       </div>
-      <div className="col-md-6 registration">
+      <div className="registration">
         <h2>Signup</h2>
 
         <form onSubmit={handleSignup} className="form signup-form">
@@ -136,6 +132,7 @@ export default function Login() {
           </div>
         </form>
       </div>
+    </div>
     </div>
   );
 }
