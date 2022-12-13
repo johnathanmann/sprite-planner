@@ -1,21 +1,24 @@
 .login-container{
     height: 100vh;
-    background:var(--green);
     margin: 0;
     display: flex;  
     justify-content: center;  
     align-items: center;  
     font-family: roboto;
+    background-color: var(--green);
 }
 
 .border{
-    width: 100vw;
-    border-top: 5px solid #000;
-    border-bottom: 5px solid #000;
+    width: 80vw;
+    border: 5px solid #000;
 }
 
 .registration{
     margin: 0px 100px;
+}
+
+#login h2{
+    font-family: robotoitalic;
 }
 
 #login input{
@@ -40,7 +43,7 @@ input:-webkit-autofill:active{
 #login button{
     color:  #000;
     font-family: robotoitalic;
-    margin: 0px 0px 10px 0px;
-    padding: 0px;
-    border-bottom: 3px solid #000;
-}
+    margin: 0;
+    padding: 10px 0px;
+    border: none;
+} 
