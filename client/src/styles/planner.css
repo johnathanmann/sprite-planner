@@ -1,0 +1,31 @@
+.planner-container{
+    background-color: var(--green);
+    height: 100vh;
+    font-family: roboto;
+}
+
+#planner p{
+    margin: 0px;
+}
+
+.header {
+    font-family: metalgear;
+    background-color: #000;
+    color: var(--green);
+    padding: 10px;
+    text-align: right;
+}
+
+.header p{
+    display: inline-block;
+    padding-left: 20px;
+}
+
+#planner button{
+    all: unset;
+    background-image: url("../assets/imgs/arrow.png");
+    height: 32px;
+    width: 32px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}

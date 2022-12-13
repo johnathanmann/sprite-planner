@@ -1,4 +1,6 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
+import Auth from "../../utils/auth";
+import "../../styles/planner.css";
 
 async function projectForm() {
 
@@ -29,19 +31,40 @@ async function projectForm() {
   }
   };
   
-  export default function Planner() {
+  export default function Planner({handlePageChange }) {
+    const [singleUser, setSingleUser] = useState([]);
+    const [userID, setUserID] = useState([]);
+  
+    async function getUser() {
+      const tokenData = Auth.getProfile();
+      const userInfo = tokenData.data._id;
+      setUserID(userInfo);
+      const response = await fetch(`/api/users/${userID}`);
+      const singleUser = await response.json();
+  
+      setSingleUser(singleUser)
+    }
+    useEffect(() => {
+      getUser();
+    });
+
+    function refreshPage(){
+      window.location.reload();
+  } 
+
     return (
-      <div className="container-fluid">
+      <div className="planner-container" id="planner">
+        <div className="header">
+        <button onClick={refreshPage}/>
+        <p>Logged in as <br/>user<span id="userId">{singleUser._id}</span></p>
+        </div>
         <h1>New Project</h1>
         <form>
-          <div className="form-group">
             <h3>
               <label>Project Title:</label>
             </h3>
             <br />
-            <textarea className="form-control" id="projectTitle" rows="1"></textarea>
-          </div>
-          <div className="form-group">
+            <textarea className="form-control" id="projectTitle"/>
             <h3>
               <label>Project Description:</label>
             </h3>
@@ -51,14 +74,8 @@ async function projectForm() {
               id="projectDescription"
               rows="3"
             ></textarea>
-          </div>
-          <div className="form-group">
-  
-            <button onClick={() =>projectForm()} className="btn" type="submit">
-  
-              Submit
+            <button onClick={() =>projectForm()} className="btn" type="submit">Submit
             </button>
-          </div>
         </form>
       </div>
     );

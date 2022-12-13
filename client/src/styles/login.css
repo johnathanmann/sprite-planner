@@ -47,3 +47,7 @@ input:-webkit-autofill:active{
     padding: 10px 0px;
     border: none;
 } 
+
+.hidden{
+    display: none;
+}
