@@ -38,16 +38,16 @@ input:-webkit-autofill:active{
 
 #login label{
     margin: 15px 0px;
+    font-family: robotoBold;
+}
+
+#login h3{
+    font-family: metalgear;
 }
 
 #login button{
-    color:  #000;
-    font-family: robotoitalic;
+    color: #000;
     margin: 0;
-    padding: 10px 0px;
-    border: none;
+    padding: 0 0 5px 0;
+    font-family: robotoBold;
 } 
-
-.hidden{
-    display: none;
-}

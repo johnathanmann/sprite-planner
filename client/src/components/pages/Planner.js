@@ -58,25 +58,20 @@ async function projectForm() {
         <button onClick={refreshPage}/>
         <p>Logged in as <br/>user<span id="userId">{singleUser._id}</span></p>
         </div>
-        <h1>New Project</h1>
+        <div className="border">
+        <h3>New Project</h3>
         <form>
-            <h3>
               <label>Project Title:</label>
-            </h3>
-            <br />
-            <textarea className="form-control" id="projectTitle"/>
-            <h3>
+            <textarea id="projectTitle"/>
               <label>Project Description:</label>
-            </h3>
-            <br />
             <textarea
-              className="form-control"
               id="projectDescription"
               rows="3"
             ></textarea>
-            <button onClick={() =>projectForm()} className="btn" type="submit">Submit
+            <button onClick={() =>projectForm()} id="plannerSubmit" type="submit">Submit
             </button>
         </form>
+      </div>
       </div>
     );
   }

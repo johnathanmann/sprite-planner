@@ -56,7 +56,7 @@ export default function Login() {
     <div className="login-container" id="login">
       <div className="border">
       <div className="registration">
-        <h2>Login</h2>
+        <h3>Login</h3>
         <form onSubmit={handleLogin}>
           <div className="form-group">
             <label>Email:</label>
@@ -80,13 +80,13 @@ export default function Login() {
               name="password"
             />
           </div>
-            <button type="submit">
+            <button type="submit" className="submit">
               Login
             </button>
         </form>
       </div>
       <div className="registration">
-        <h2>Signup</h2>
+      <h3>Signup</h3>
 
         <form onSubmit={handleSignup} className="form signup-form">
           <div className="form-group">
