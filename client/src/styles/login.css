@@ -47,3 +47,9 @@ input:-webkit-autofill:active{
     border: 3px solid black;
     margin: 10px 0px;
 } 
+
+@media (max-width: 550px) {
+    .registration{
+        margin: 0px 50px;
+    }
+}

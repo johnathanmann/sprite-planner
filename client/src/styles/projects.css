@@ -48,3 +48,15 @@
     border: 3px solid black;
     margin: 10px 0px;
 }
+
+@media (max-width: 756px){
+    .header p{
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 550px){
+    .header p{
+        font-size: 8px;
+    }
+}

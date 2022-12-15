@@ -58,7 +58,7 @@ async function projectForm() {
         <button onClick={refreshPage}/>
         <p>Logged in as <br/>user<span id="userId">{singleUser._id}</span></p>
         </div>
-        <div className="border">
+        <div className="border" id="plannerForm">
         <h3>New Project</h3>
         <form>
               <label>Project Title:</label>
