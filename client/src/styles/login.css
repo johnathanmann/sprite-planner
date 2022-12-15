@@ -38,7 +38,7 @@ input:-webkit-autofill:active{
 
 #login label{
     margin: 15px 0px;
-    font-family: robotoBold;
+    font-family: symtext;
 }
 
 #login h3{
@@ -49,5 +49,5 @@ input:-webkit-autofill:active{
     color: #000;
     margin: 0;
     padding: 0 0 5px 0;
-    font-family: robotoBold;
+    font-family: symtext;
 } 
