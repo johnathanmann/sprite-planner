@@ -6,7 +6,7 @@ This project was made as an effort to practice my full stack skills as Ive just 
 
 Check out the different aspects of the project below:
 
-- [Heroku Deployment]()
+- [Heroku Deployment](https://sprite-planner.herokuapp.com/)
 - [Repository](https://github.com/johnathanmann/sprite-planner)
 
 ![Screenshot of site](./client/src/assets/imgs/sprite-planner.png)
