@@ -23,12 +23,10 @@ export default function Project({thisProject}) {
   const projectId = thisProject._id;
 return (
         <div key={thisProject._id} className="project">
-      <h3>
-        {thisProject.title}
-      </h3>
+      <h2>{thisProject.title}</h2>
       <code>{thisProject.description}</code> <br />
       <button onClick={() => deleteProject(projectId)} >
-      <span id="projectId">{thisProject._id}</span>
+      <span id="projectId">Delete</span>
       </button>
       </div>
 )

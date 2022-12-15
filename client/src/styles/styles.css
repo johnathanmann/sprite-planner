@@ -29,9 +29,15 @@
 
 body{
 margin: 0;
+background-color: var(--green);
 }
 
 .container{
     display: flex;
+}
+
+.border{
+    width: 80vw;
+    border: 5px solid #000;
 }
 

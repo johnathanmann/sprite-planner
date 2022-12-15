@@ -8,11 +8,6 @@
     background-color: var(--green);
 }
 
-.border{
-    width: 80vw;
-    border: 5px solid #000;
-}
-
 .registration{
     margin: 0px 100px;
 }
@@ -46,8 +41,9 @@ input:-webkit-autofill:active{
 }
 
 #login button{
-    color: #000;
-    margin: 0;
-    padding: 0 0 5px 0;
+    all: unset;
     font-family: symtext;
+    padding: 5px;
+    border: 3px solid black;
+    margin: 10px 0px;
 } 
