@@ -1,6 +1,6 @@
 # sprite-planner
 
-This project was made as an effort to practice my full stack skills as Ive just finished my coding bootcamp. Additonally I wanted to test my skills with vanilla CSS as in the past I've relied heavily on Bootstrap.
+This project was made as an effort to practice my full stack skills as I've just finished my coding bootcamp. Additonally I wanted to test my skills with vanilla CSS as in the past I've relied heavily on Bootstrap.
 
 ## Check out the Project
 
