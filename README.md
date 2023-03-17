@@ -13,7 +13,7 @@ Check out the different aspects of the project below:
 
 ## Design Process
 
-The UI design of this site was 100% inspired by that of the photo viewer in Metal Gear Solid 2 which was created in universe by Hal "Otacon" Emmerich. The whole Metal Gear series has a lot of UI design I love, especially Metal Gear Solid 3. I figured Otacon, a computer programer and engineer, could have used a site like this himself in his own programming endeavors. During some of the font searching I did for this prject I found this cool blog post about the intent of font in MGS check it out [here](https://metalgearstuff.wordpress.com/2020/01/29/the-fonts-of-metal-gear-solid/) if your interested!
+The UI design of this site was 100% inspired by that of the photo viewer in Metal Gear Solid 2 which was created in universe by Hal Emmerich. The whole Metal Gear series has a lot of UI design I love, especially Metal Gear Solid 3. I figured Emmerich, a computer programer and engineer, could have used a site like this himself in his own programming endeavors. During some of the font searching I did for this prject I found this cool blog post about the intent of font in MGS check it out [here](https://metalgearstuff.wordpress.com/2020/01/29/the-fonts-of-metal-gear-solid/) if your interested!
 
 Fonts: <br/>
 [MGS2 Menu Font](https://fontmeme.com/fonts/mgs2-menu-font/)<br/>
